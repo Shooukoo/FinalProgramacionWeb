@@ -1,0 +1,132 @@
+/* styles.css */
+
+/* Resetea los márgenes y el padding de los elementos para un diseño más limpio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;  /* Color de fondo claro */
+    color: #333;                /* Texto oscuro para buen contraste */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contenedor principal de la aplicación */
+#root {
+    max-width: 1200px;
+    margin: 0 auto;            /* Centrado horizontal */
+    padding: 20px;
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3 {
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para los enlaces (si los usas en tu aplicación) */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botones básicos */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenido de la página (si tienes secciones o bloques) */
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Estilo de formularios */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Lista de estudiantes */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 20px;
+    padding: 15px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el nombre y el botón */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Línea gris debajo de cada estudiante */
+    font-size: 1rem;
+    color: #333;
+}
+
+li:last-child {
+    border-bottom: none; /* Eliminar la línea del último elemento */
+}
+
+button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+/* Encabezado de la lista */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
